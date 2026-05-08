@@ -85,6 +85,7 @@ def load_augmentation_index(data_dir, splits, json_path=None, ext=['wav','mp3'],
         with open(json_path, 'r') as fp:
             dataset = json.load(fp)
 
+    print(dataset.get('train')[:5])
     return dataset
 
 
